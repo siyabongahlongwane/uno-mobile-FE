@@ -1,0 +1,30 @@
+<div class="margin-top" fxLayout="column" fxLayoutAlign="start stretch">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="restyle-mat-btn" fxLayout="column" fxLayoutAlign="start stretch" fxFlex="48">
+            <button class="order-btn" mat-raised-button>Order your free SIM</button>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start stretch" fxFlex="48">
+            <button class="order-btn" mat-raised-button>Activate your SIM</button>
+        </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+        <div class="margin-top-img" fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="column" fxLayoutAlign="start stretch" class="pointer">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center">
+                <img class="pounds-img" src="../../assets/icons/8-pound.svg" alt="">
+                <span class="gigs-font" style="margin: 10px 0px 8px 0px;">{{this.gigObj}}</span>
+                <span class="text-calls-color">Unlimited calls and texts</span>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start stretch" (click)="next()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+
+
+        </div>
+    </div>
+</div>
