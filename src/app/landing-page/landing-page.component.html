@@ -11,7 +11,7 @@
                         </h1>
                     </div>
                   <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="50">
-                        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px" *ngFor="let item of links">
+                        <div class="toolbar-item-hover pointer" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px" *ngFor="let item of links">
                             <img class="toolbar-profile" src="../../assets/icons/{{item.profileIcon}}" alt="" *ngIf="(item.profileIcon) !== ''">
                             <h3 class="text-remove-margin white-color">{{item.linkName}}</h3>
                         </div>
