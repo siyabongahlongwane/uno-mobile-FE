@@ -7,24 +7,37 @@
             <button class="order-btn" mat-raised-button>Activate your SIM</button>
         </div>
     </div>
-    <div fxLayout="column" fxLayoutAlign="start stretch">
+    <div class="sim-container" fxLayout="column" fxLayoutAlign="start stretch">
         <div class="margin-top-img" fxLayout="row" fxLayoutAlign="space-between center">
-            <div fxLayout="column" fxLayoutAlign="start stretch" class="pointer">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
+            <div class="pointer" fxLayout="column" fxLayoutAlign="start stretch" (click)="previous()">
+                <mat-icon class="skip-arrow" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
             </div>
             <div fxLayout="column" fxLayoutAlign="start center">
-                <img class="pounds-img" src="../../assets/icons/8-pound.svg" alt="">
-                <span class="gigs-font" style="margin: 10px 0px 8px 0px;">{{this.gigObj}}</span>
-                <span class="text-calls-color">Unlimited calls and texts</span>
+                <img class="pounds-img" src="../../assets/icons/{{gigObj.img}}" alt="">
+                <span class="gigs-font" style="margin: 10px 0px 8px 0px;">{{gigObj.gig}}</span>
+                <span class="text-calls-color">{{gigObj.limit}}</span>
             </div>
-            <div fxLayout="column" fxLayoutAlign="start stretch" (click)="next()">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
+            <div class="pointer" fxLayout="column" fxLayoutAlign="start stretch" (click)="next()">
+                <mat-icon class="skip-arrow" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
             </div>
         </div>
 
-        <div fxLayout="column" fxLayoutAlign="start stretch">
+        <div class="margin-top" fxLayout="column" fxLayoutAlign="start center">
+            <p class="months-text">18 month contract</p>
+            <div class="month-details" fxLayout="column" fxLayoutAlign="start stretch">
+                <p>{{gigObj.months}}</p>
+            </div>
+        </div>
 
-
+        <div class="margin-top" fxLayout="column" fxLayoutAlign="start center">
+            <div class="see-all-text">
+                <a href="">
+                    <div class="month-details see-all-a-tag" fxLayout="row" fxLayoutAlign="start center">
+                        <b>See all plans</b>
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_right"></mat-icon>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

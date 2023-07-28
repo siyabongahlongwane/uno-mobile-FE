@@ -1,5 +1,5 @@
 .order-btn{
-    padding: 25px;
+    padding: 20px;
     border: 3px solid black;
     border-radius: 29px;
     box-shadow: 0px 5px;
@@ -30,4 +30,35 @@
 
 .margin-top-img{
     margin: 30px 0px 0px 0px
+}
+.sim-container{
+    width: 88%;
+    margin: auto;
+}
+.skip-arrow{
+    font-size: 26px;
+    font-weight: 800;
+}
+.months-text{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .02em;
+}
+.month-details{
+    text-align: center;
+    width: 85%;
+}
+.see-all-text{
+    width: 32%;
+    text-align: center;
+    position: relative;
+    left: 34px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.see-all-a-tag{
+    color: #00528a;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
